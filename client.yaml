@@ -1,0 +1,25 @@
+openai:
+  # Set this to your OpenAI API key
+  api_key:
+
+  # Set this to your Azure OpenAI URL if using Azure OpenAI
+  api_url:
+
+  # Azure API version
+  azure_api_version: 2024-08-01-preview
+
+graphdb:
+  # The base URL of the GraphDB instance
+  url: http://localhost:7200
+
+  # GraphDB username to associate with created threads and use for HTTP basic auth
+  username: ttyg
+
+  # Set this to use HTTP basic auth (with the above username)
+  password:
+
+  # Set this to use a custom HTTP authorization header (for example, GraphDB or OpenID token)
+  auth_header:
+
+  # TTYG installation ID
+  installation_id: __default__
