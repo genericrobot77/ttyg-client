@@ -416,7 +416,7 @@ class TTYGClient:
 
     def print_assistants_and_threads(self) -> None:
         """Print the available TTYG assistants."""
-        assistants = self._client.beta.assistants.list().data
+        assistants = self._client.beta.assistants.list(limit=100).data
         if len(assistants) > 0:
             TTYGClient.print_info(">>> The available assistants are:")
             print()
